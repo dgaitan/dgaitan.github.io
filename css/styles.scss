@@ -1,0 +1,26 @@
+---
+---
+
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,600,700');
+
+body {
+	margin: 0;
+	background-color: #274555;
+	font-family: Cabin, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.site-main {
+	color: #FFF;
+	max-width: 600px;
+
+	h1 {
+		margin-bottom: 0;
+	}
+	h4 {
+		margin-top: 0;
+	}
+}
