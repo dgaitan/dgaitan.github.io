@@ -1,15 +1,31 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: site
-title: Home
+title: David Gaitan
 ---
 
 
-<main class="site-main">
-	<h1>David Gaitan</h1>
-	<h4>Desarrollador FrontEnd</h4>
-	<p>Hola, a como ya te pudiste dar cuenta, mi nombre es DavidGaitan y soy un desarrollador web apasionado con el buen codigo. Me gusta hacer algunos experimentos o tomar muchos retos, porque la realidad de ellos, se aprenden muchisimo.</p>
+<main class="main-site">
+	<div class="site-container">
+		<div class="column">
+			<p class="text-center p-tb-30">Adicto al café y a las películas, no se diga más de la música porque me gusta tocar la batería ;) Pero entrando al grano, en mi día a día me dedico a escribir código, me gusta mucho el detalle, por eso el FrontEnd es donde me desempeño más, pero cuando se trata de escribir BackEnd, me encanta hacerlo con Ruby on Rails, solamente por que es mega genial lml</p>
+			<div class="line-center"></div>
+		</div>
+		<div class="two-columns">
+			<h3>Articulos recientes</h3>
+			<ul class="post-list">
+			  {% for post in site.posts %}
+			    <li>
+			      <a href="{{ post.url }}">{{ post.title }}</a>
+			    </li>
+			  {% endfor %}
+			</ul>
+		</div>
+		<div class="two-columns">
+			<h3>Proyectos Recientes</h3>
+			<ul class="post-list">
+				<li><a href="davidgaitan.com/nicaragua-map">Nicaragua Maps</a></li>
+			</ul>
+		</div>
+	</div>
 </main>
 
