@@ -8,13 +8,14 @@
         <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
         <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
         <meta name="keywords" lang="es" content="{{ page.keywords }}" />
+        <meta name="author" content="David Gaitan">
         <!-- metas Twitter Cards & Facebook -->
         <meta property="og:site_name" content="davidgaitan.com" />
         <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
         <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
         <meta property="og:url" content="{{ page.url }}" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="http://endimages.s3.amazonaws.com/static/img/fb-end.png"/>
+        <meta property="og:image" content="{{ site.baseurl }}{{ page.image }}"/>
         <!-- metas Twitter Cards & Facebook -->
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
