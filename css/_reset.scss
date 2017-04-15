@@ -1,98 +1,98 @@
-/**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-  margin: 0;
-  padding: 0; }
+// /**
+//  * Reset some basic elements
+//  */
+// body, h1, h2, h3, h4, h5, h6,
+// p, blockquote, pre, hr,
+// dl, dd, ol, ul, figure {
+//   margin: 0;
+//   padding: 0; }
 
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-.highlight {
-  margin-bottom: 15px; }
+// /**
+//  * Set `margin-bottom` to maintain vertical rhythm
+//  */
+// h1, h2, h3, h4, h5, h6,
+// p, blockquote, pre,
+// ul, ol, dl, figure,
+// .highlight {
+//   margin-bottom: 15px; }
 
-/**
- * Images
- */
-img {
-  max-width: 100%;
-  vertical-align: middle; }
+// /**
+//  * Images
+//  */
+// img {
+//   max-width: 100%;
+//   vertical-align: middle; }
 
-/**
- * Figures
- */
-figure > img {
-  display: block; }
+// /**
+//  * Figures
+//  */
+// figure > img {
+//   display: block; }
 
-figcaption {
-  font-size: 14px; }
+// figcaption {
+//   font-size: 14px; }
 
-/**
- * Lists
- */
-ul, ol {
-  margin-left: 30px; }
+// /**
+//  * Lists
+//  */
+// ul, ol {
+//   margin-left: 30px; }
 
-li > ul,
-li > ol {
-  margin-bottom: 0; }
+// li > ul,
+// li > ol {
+//   margin-bottom: 0; }
 
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+// /**
+//  * Headings
+//  */
+// h1, h2, h3, h4, h5, h6 {
+//   font-weight: 400; }
 
-/**
- * Links
- */
-a {
-  color: #2a7ae2;
-  text-decoration: none; }
-  a:visited {
-    color: #1756a9; }
-  a:hover {
-    color: #111;
-    text-decoration: underline; }
+// /**
+//  * Links
+//  */
+// a {
+//   color: #2a7ae2;
+//   text-decoration: none; }
+//   a:visited {
+//     color: #1756a9; }
+//   a:hover {
+//     color: #111;
+//     text-decoration: underline; }
 
-/**
- * Blockquotes
- */
-blockquote {
-  color: #828282;
-  border-left: 4px solid #e8e8e8;
-  padding-left: 15px;
-  font-size: 18px;
-  letter-spacing: -1px;
-  font-style: italic; }
-  blockquote > :last-child {
-    margin-bottom: 0; }
+// /**
+//  * Blockquotes
+//  */
+// blockquote {
+//   color: #828282;
+//   border-left: 4px solid #e8e8e8;
+//   padding-left: 15px;
+//   font-size: 18px;
+//   letter-spacing: -1px;
+//   font-style: italic; }
+//   blockquote > :last-child {
+//     margin-bottom: 0; }
 
-/**
- * Code formatting
- */
-pre,
-code {
-  font-size: 15px;
-  border: 1px solid #e8e8e8;
-  border-radius: 3px;
-  background-color: #eef; }
+// /**
+//  * Code formatting
+//  */
+// pre,
+// code {
+//   font-size: 15px;
+//   border: 1px solid #e8e8e8;
+//   border-radius: 3px;
+//   background-color: #eef; }
 
-code {
-  padding: 1px 5px; }
+// code {
+//   padding: 1px 5px; }
 
-pre {
-  padding: 8px 12px;
-  overflow-x: auto; }
-  pre > code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0; }
+// pre {
+//   padding: 8px 12px;
+//   overflow-x: auto; }
+//   pre > code {
+//     border: 0;
+//     padding-right: 0;
+//     padding-left: 0; }
 
 
 
@@ -248,3 +248,84 @@ pre {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+
+/* Space out content a bit */
+body {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 1rem;
+  border-bottom: .05rem solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 3rem;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 1.5rem;
+  color: #777;
+  border-top: .05rem solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 48em) {
+  .container {
+    max-width: 46rem;
+  }
+}
+.container-narrow > hr {
+  margin: 2rem 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: .05rem solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: .75rem 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 3rem 0;
+}
+.marketing p + h4 {
+  margin-top: 1.5rem;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 48em) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 2rem;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
