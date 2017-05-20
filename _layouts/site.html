@@ -3,11 +3,43 @@
 
 	<body>
         <div class="container">
-            {% include header.html %}
-            
-            {{ content }}
-            
-            {% include footer.html %}
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 text-center sticky-top">
+                    <img src="{{ site.image_path }}davidgaitan.jpg" alt="DavidGaitan" class="img-profile">
+                    <h3 class="m-0">
+                        <a href="{{ site.url }}" class="davidgaitan">DavidGaitan</a>
+                    </h3>
+                    <p>Desarrollador Web</p>
+                    <div class="line-small"></div>
+                    <ul class="nav justify-content-center m-0 nav-social-links">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ site.github_url }}" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ site.twitter_url }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6" style="min-height: 3000px;">
+                    {{ content }}
+                </div>
+                <div class="col-xs-12 col-sm-3 sticky-top-top">
+                    <h5><strong>Proyectos</strong></h5>
+                    <hr>
+                    <div class="card-project">
+                        <h4 class="card-title">
+                            <a href="#">Nicaragua Map</a>
+                        </h4>
+                        <p class="card-text">Simple mapa de nicaragua elaborado con svg y highchart</p>
+                    </div>
+                    <div class="card-project">
+                        <h4 class="card-title">
+                            <a href="#">Sofy Sharer</a>
+                        </h4>
+                        <p class="card-text">Simple libreria para crear modales y compartir en redes en sociales</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </body>

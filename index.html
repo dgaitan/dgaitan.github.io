@@ -7,24 +7,21 @@ image: /assets/img/post-header.jpg
 ---
 
 <main>
-	<div class="jumbotron">
-		<p class="lead">Adicto al café y a las películas, no se diga más de la música porque me gusta tocar la batería ;) Pero entrando al grano, en mi día a día me dedico a escribir código, me gusta mucho el detalle, por eso el FrontEnd es donde me desempeño más, pero cuando se trata de escribir BackEnd, me encanta hacerlo con Ruby on Rails, solamente por que es mega genial lml</p>
-	</div>
-	<div class="row marketing">
-		<div class="col col-lg-6">
-			<h4>Articulos Recientes</h4>
-			<nav class="nav flex-column">
-				{% for post in site.posts %}
-			  		<a class="nav-link" href="{{ post.url }}">{{ post.title }}</a>
-				{% endfor %}
-			</nav>
-		</div>
-		<div class="col col-lg-6">
-			<h4>Proyectos</h4>
-			<nav class="flex-column">
-				<a href="/nicaragua-map" class="nav-link">Nicaragua Map</a>
-			</nav>
-		</div>
-	</div>
+	<section class="feed">
+		{% for post in site.posts %}
+	  		<div class="article">
+	  			<h4 class="article-headline">
+	  				<a href="{{ post.url }}">
+	  					{{ post.title }}
+	  				</a>
+	  			</h4>
+	  			<div class="article-content">
+	  				{% if post.thumbnail %}
+	  					<img src="{{ post.thumbnail }}" alt="">
+	  				{% endif %}
+	  			</div>
+	  		</div>
+		{% endfor %}		
+	</section>
 </main>
               
