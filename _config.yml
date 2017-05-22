@@ -30,8 +30,12 @@ markdown: kramdown
 theme: minima
 gems: 
   - jekyll-feed
+  - jekyll-paginate
 sass:
     sass_dir: _sass
 exclude:
   - Gemfile
   - Gemfile.lock
+
+permalink: /:categories/:title.html
+paginate: 10

@@ -1,10 +1,12 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,400i,700,900|Montserrat:400,700');
-
 //variables
 $primary-color: #274555;
+
+ul {
+  margin-left: 0;
+}
 
 
 /* Space out content a bit */
@@ -65,6 +67,28 @@ body {
 }
 
 .article {
-  border-bottom: 1px solid #CCC;
+  border-bottom: 2px solid #CCC;
   margin-bottom: 20px;
+
+  .article-headline {
+    margin-bottom: 0;
+    a {
+      color: #505050;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+
+  .article-date {
+    font-size: 13px;
+  }
+
+  .article-content {
+
+    img, p {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 0;
+    }
+  }
 }
